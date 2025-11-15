@@ -5,14 +5,14 @@ export default function Products() {
 
     return (
         <>
-            <Header />
-            <main>
-                <h1>noi siamo noi</h1>
-                <p>comprate!!!</p>
-            </main>
-            <footer>
 
-            </footer>
+            <main>
+                <div className="container">
+                    <h1>noi siamo noi</h1>
+                    <p>comprate!!!</p>
+                </div>
+            </main>
+
         </>
     )
 
