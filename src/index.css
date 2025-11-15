@@ -9,3 +9,15 @@ footer {
   min-height: 150px;
   background-color: black;
 }
+
+.card {
+  height: 400px;
+  overflow: hidden;
+
+
+  img {
+    max-width: 100%;
+
+    object-fit: cover;
+  }
+}
