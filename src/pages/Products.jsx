@@ -27,10 +27,11 @@ export default function Products() {
                         {
                             prodocts.map((el) => (
                                 <div key={el.id} className="col-sm-12 col-md-4 ">
-
-                                    <div className="card">
-                                        <img src={el.image} alt="" />
-                                    </div>
+                                    <Link to={`/products/${el.id}`}>
+                                        <div className="card">
+                                            <img src={el.image} alt="" />
+                                        </div>
+                                    </Link>
                                     <div className="card-body">
                                         <h4>{el.title}</h4>
                                         <p><span>category:</span>{el.category} </p>
