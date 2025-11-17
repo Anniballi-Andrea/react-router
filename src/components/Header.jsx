@@ -8,7 +8,7 @@ export default function Header() {
         <header>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">BolStore</a>
+                    <a className="navbar-brand" href="/">BoolStore</a>
                     <button
                         className="navbar-toggler"
                         type="button"
