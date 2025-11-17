@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 export default function Products() {
+
 
     const [prodocts, setProdocts] = useState([])
 
@@ -21,13 +23,11 @@ export default function Products() {
 
             <main>
                 <div className="container">
-                    <h1>noi siamo noi</h1>
-                    <p>comprate!!!</p>
-
                     <div className="row">
                         {
                             prodocts.map((el) => (
                                 <div key={el.id} className="col-sm-12 col-md-4 ">
+
                                     <div className="card">
                                         <img src={el.image} alt="" />
                                     </div>
@@ -38,6 +38,8 @@ export default function Products() {
                                         <p><span>-{el.price}</span></p>
 
                                     </div>
+
+
                                 </div>
 
                             ))
@@ -46,7 +48,7 @@ export default function Products() {
 
                     </div>
                 </div>
-            </main>
+            </main >
 
         </>
     )
